@@ -21,7 +21,7 @@ function App() {
                 {
                   iconName: "ropa",
                   color: "danger",
-                  text: "Ropa",
+                  text: "Ropa y moda",
                   path: "https://www.google.com"
                 },
                 {

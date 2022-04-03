@@ -18,9 +18,9 @@ export const Category = (
 ) =>
 (
   <Col>
-    <Button variants={color} href={path}>
-      <h1>{text}</h1>
-      <FontAwesomeIcon icon={icons[iconName]}></FontAwesomeIcon>
+    <Button variant={color} href={path}>
+      <h4>{text}</h4>
+      <h1><FontAwesomeIcon icon={icons[iconName]}></FontAwesomeIcon></h1>
     </Button>
   </Col>
 );
