@@ -1,23 +1,48 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row } from 'react-bootstrap';
+import { ListOfCategories } from './Components/listOfCategories'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container>
+        <Row>
+          <ListOfCategories
+            categories={
+              [
+                {
+                  iconName: "tv",
+                  color: "primary",
+                  text: "Television",
+                  path: "https://www.google.com"
+                },
+                {
+                  iconName: "ropa",
+                  color: "danger",
+                  text: "Ropa",
+                  path: "https://www.google.com"
+                },
+                {
+                  iconName: "game",
+                  color: "success",
+                  text: "Videojuegos",
+                  path: "https://www.google.com"
+                },
+                {
+                  iconName: "hogar",
+                  color: "secondary",
+                  text: "Casa y hogar",
+                  path: "https://www.google.com"
+                },
+              ]
+            }
+          >
+
+          </ListOfCategories>
+        </Row>
+      </Container>
     </div>
   );
 }
